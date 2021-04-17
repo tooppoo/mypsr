@@ -22,9 +22,12 @@ $serverRequest = $creator->fromGlobals();
 $path = $serverRequest->getUri()->getPath();
 
 if ($path === '/now') {
-    $response = $psr17Factory->createResponse(200)
-        ->withBody(
-            $psr17Factory->createStream(date('Y年m月d日 H時i分s秒'))
-        );
+    $handler = new \philomagi\MyPsr\Http\Handler\DateAction();
+
+    $response = $handler->handle($serverRequest);
+} else {
+    $response = $psr17Factory->createResponse(404)
+        ->withBody($psr17Factory->createStream('Not Found'));
 }
+
 echo (string)$response->getBody();
