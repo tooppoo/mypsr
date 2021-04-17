@@ -21,6 +21,10 @@ $serverRequest = $creator->fromGlobals();
 
 $path = $serverRequest->getUri()->getPath();
 
-if ($path === '/') {
-    echo date('Y年m月d日 H時i分s秒');
+if ($path === '/now') {
+    $response = $psr17Factory->createResponse(200)
+        ->withBody(
+            $psr17Factory->createStream(date('Y年m月d日 H時i分s秒'))
+        );
 }
+echo (string)$response->getBody();
