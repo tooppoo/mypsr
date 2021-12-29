@@ -12,7 +12,7 @@
         "psr/http-server-handler": "^1.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "5.3.10",
+        "symfony/var-dumper": "6.0.2",
         "filp/whoops": "2.14.4",
         "bamarni/composer-bin-plugin": "1.4.1"
     },
