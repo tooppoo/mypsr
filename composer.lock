@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4848610e582d4dd06e23002849de92fb",
+    "content-hash": "be10ad1af4c0a524ba5ead4c24ba416e",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -667,16 +667,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.3.10",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "875432adb5f5570fff21036fd22aee244636b7d1"
+                "reference": "1b56c32c3679002b3a42384a580e16e2600f41c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/875432adb5f5570fff21036fd22aee244636b7d1",
-                "reference": "875432adb5f5570fff21036fd22aee244636b7d1",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1b56c32c3679002b3a42384a580e16e2600f41c1",
+                "reference": "1b56c32c3679002b3a42384a580e16e2600f41c1",
                 "shasum": ""
             },
             "require": {
@@ -690,8 +690,9 @@
             },
             "require-dev": {
                 "ext-iconv": "*",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/process": "^4.4|^5.0",
+                "symfony/console": "^4.4|^5.0|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/uid": "^5.1|^6.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
             "suggest": {
@@ -748,7 +749,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-26T09:30:15+00:00"
+            "time": "2021-12-29T10:10:35+00:00"
         }
     ],
     "aliases": [],
